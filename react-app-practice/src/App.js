@@ -6,6 +6,7 @@ import Home from "./Views/Home";
 import About from "./Views/About";
 import ContactUs from "./Views/ContactUs";
 import Product from "./Views/Product";
+import Products from "./Views/Products";
 
 function App() {
   return (
@@ -23,7 +24,10 @@ function App() {
             <Route path="/contact-us">
               <ContactUs />
             </Route>
-            <Route path="/products/:id">
+            <Route path="/products">
+              <Products />
+            </Route>
+            <Route path="/product/:id">
               <Product />
             </Route>
           </Switch>

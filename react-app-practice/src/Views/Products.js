@@ -3,8 +3,8 @@ import Loader from "../Components/Loader";
 import ProductCard from "../Components/ProductCard";
 import { useAxiosGet } from "../Hooks/HttpRequests";
 
-function Home() {
-  const url = `https://5fa0e320e21bab0016dfd6fe.mockapi.io/products?page=1&limit=5`;
+function Products() {
+  const url = `https://5fa0e320e21bab0016dfd6fe.mockapi.io/products?page=1&limit=15`;
 
   let products = useAxiosGet(url);
   let content = null;
@@ -26,10 +26,10 @@ function Home() {
 
   return (
     <div>
-      <h1 className="font-bold text-2xl">Best Sellers</h1>
+      <h1 className="font-bold text-2xl">All Products</h1>
       {content}
     </div>
   );
 }
 
-export default Home;
+export default Products;
