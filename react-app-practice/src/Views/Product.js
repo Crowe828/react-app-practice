@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import Loader from "../Components/Loader";
 import { useAxiosGet } from "../Hooks/HttpRequests";
 
@@ -23,13 +23,19 @@ function Product() {
         <h1 className="text-2xl font-bold mb-3">{product.data.name}</h1>
         <div>
           <img
-            className="border mb-4 rounded overflow-hidden"
+            className="mb-4 rounded overflow-hidden"
             src={product.data.images}
             alt={product.data.name}
           />
         </div>
         <div className="font-bold text-xl mb-3">$ {product.data.price}</div>
-        <div>{product.data.description}</div>
+        <div className="mb-4">{product.data.description}</div>
+        <Link
+          to={"/products"}
+          className="bg-blue-500 text-white p-2 flex justify-center w-full rounded"
+        >
+          Back to all products
+        </Link>
       </div>
     );
   }

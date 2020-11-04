@@ -30,7 +30,7 @@ function NavigationMenu(props) {
             className="text-blue-500 py-3 border-b block"
             onClick={props.closeMenu}
           >
-            Contact Us
+            Contact
           </Link>
         </li>
         <li>
