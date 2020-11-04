@@ -22,7 +22,11 @@ function Product() {
       <div>
         <h1 className="text-2xl font-bold mb-3">{product.data.name}</h1>
         <div>
-          <img src={product.data.images} alt={product.data.name} />
+          <img
+            className="border mb-4 rounded overflow-hidden"
+            src={product.data.images}
+            alt={product.data.name}
+          />
         </div>
         <div className="font-bold text-xl mb-3">$ {product.data.price}</div>
         <div>{product.data.description}</div>

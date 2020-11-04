@@ -5,7 +5,6 @@ import Footer from "./Components/Footer";
 import Home from "./Views/Home";
 import About from "./Views/About";
 import ContactUs from "./Views/ContactUs";
-
 import Product from "./Views/Product";
 
 function App() {
